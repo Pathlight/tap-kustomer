@@ -225,11 +225,11 @@ This tap:
     - [singer-tools](https://github.com/singer-io/singer-tools)
     - [target-stitch](https://github.com/singer-io/target-stitch)
 
-3. Create your tap's `config.json` file. The `token` is the credential supplied from the Kustomer integration. The `date_window_size` is the integer number of days (between the from and to dates) for date-windowing through the date-filtered endpoints (default = 60). The `page_size_limit` is the integer number of records to return per API request. 
+3. Create your tap's `config.json` file. The `api_token` is the credential supplied from the Kustomer integration. The `date_window_size` is the integer number of days (between the from and to dates) for date-windowing through the date-filtered endpoints (default = 60). The `page_size_limit` is the integer number of records to return per API request.
 
     ```json
     {
-        "token": "YOUR_API_TOKEN",
+        "api_token": "YOUR_API_TOKEN",
         "start_date": "2019-01-01T00:00:00Z",
         "user_agent": "tap-kustomer <api_user_email@your_company.com>",
         "date_window_size": "60",
